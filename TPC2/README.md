@@ -6,7 +6,7 @@ Para este exercício, é necessária a criação em Python um conversor dos elem
 
 ### Explicação da resolução do exercício:
 
-Foi criada uma função parser, que lê o ficheiro HTML e vai substituindo as expressões em MarkDown pelas correspondentes em HTML. Para a conversão de todos os elementos, exceto da Lista Numerada, foram utilizadas expressões regulares da maneira convencionak. Para o caso específico da Lista Numerada, primeiro a lista é substituida apenas pelo <li></li> com o conteúdo de cada elemento. Depois(apesar de não ser a forma mais eficiente de ser feita) é lido o ficheiro outra vez para apanhar cada uma das listas completas e colocá-la entre os identificadores <ol></ol>
+Foi criada uma função parser, que lê o ficheiro HTML e vai substituindo as expressões em MarkDown pelas correspondentes em HTML. Para a conversão de todos os elementos, exceto da Lista Numerada, foram utilizadas expressões regulares da maneira convencionak. Para o caso específico da Lista Numerada, primeiro a lista é substituida apenas pelo `<li><li>` com o conteúdo de cada elemento. Depois(apesar de não ser a forma mais eficiente de ser feita) é lido o ficheiro outra vez para apanhar cada uma das listas completas e colocá-la entre os identificadores `<ol><ol>`
 
 Para a execução do código, este foi executado como normal e funciona através da criação de um ficheiro .md que vai ser passado como argumento, e depois vai ser criado um ficheiro .html com o resultado.
 

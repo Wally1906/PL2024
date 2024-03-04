@@ -13,13 +13,13 @@ def replacelist(match):
 
 def parser2(file: str):
 
+    file = re.sub(r'\`(.*?)\`',r'<code>\1</code>', file)
+
     file = re.sub(r'^\d\.(.*)(\n|\Z)',r'<li>\1</li>', file, flags=re.MULTILINE) 
 
     file = re.sub(r'<li>(.*)</li>',r'<ol><li>\1</li>\n</ol>\n', file)
 
     file = re.sub(r'<li>(.*?)</li>',r'\n<li>\1</li>', file)
-
-    file = re.sub(r'\`(.*?)\`',r'<code>\1</code>', file)
 
     file = re.sub(r'^(#+)\s+(.*)$', replacetitle, file, flags=re.MULTILINE)
     
