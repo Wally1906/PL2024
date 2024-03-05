@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TPC2 De PL
 
 ### Descrição do Problema
@@ -28,3 +29,11 @@ Para a execução do código, este foi executado como normal e funciona através
 
 
 José Eduardo Silva Monteiro Santos Oliveira, A100547
+=======
+- aaa
+- bbb
+- vvv
+ # *bro*
+# bro
+Ola isto e um codigo `int c = 3;c++;`
+
